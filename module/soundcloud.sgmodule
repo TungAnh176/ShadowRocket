@@ -1,0 +1,10 @@
+#!url=https://raw.githubusercontent.com/KhanhD1nh/ShadowRocket/refs/heads/main/module/soundcloud.sgmodule
+#!name=SoundCloudGo+
+#!desc=By: KhanhD1nh
+
+
+[Script]
+SoundCloudGo+ = type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/KhanhD1nh/ShadowRocket/refs/heads/main/js/soundcloud.js
+
+[MITM]
+hostname = %APPEND% api-mobile.soundcloud.com
